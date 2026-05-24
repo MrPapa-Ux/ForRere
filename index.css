@@ -155,15 +155,17 @@ body {
 
 .splash-text {
   position: absolute;
-  bottom: 10%; /* Posisi di bawah agar tak tabrakan dengan rumah */
-  font-size: 1.5rem; /* Sedikit dikecilkan for mobile */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem; /* Dikasih agak gedean dikit biar mantap */
   color: #fff;
   font-family: 'Dancing Script', cursive, Arial, sans-serif;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8); /* Shadow ditebelin dikit biar tetep kebaca walau rumah membesar */
   z-index: 10000;
   animation: fadeOutText 3s forwards;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 
 @keyframes fadeOutText {
